@@ -38,6 +38,9 @@ group :development, :test do
   gem 'rb-readline'
   gem 'rspec-json_expectations'
   gem 'rspec-rails'
+  gem 'rubocop', '~> 1.18', require: false
+  gem 'rubocop-rails', '~> 2.11', require: false
+  gem 'rubocop-rspec', require: false
 end
 
 group :development do
@@ -50,7 +53,6 @@ group :test do
   gem 'db-query-matchers'
   gem 'json_spec'
   gem 'launchy'
-  gem 'rubocop', require: false
   gem 'shoulda-matchers'
   gem 'webdrivers'
 end
