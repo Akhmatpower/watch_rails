@@ -16,7 +16,8 @@ class ProductController < ApplicationController
   end
 
   def create
-    if params['product']['img'].nil? then params['product']['img'] = 'no_image.jpg'
+    if params['product']['img'].nil?
+      params['product']['img'] = 'no_image.jpg'
     else
       image_load
     end

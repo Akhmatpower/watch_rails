@@ -85,12 +85,6 @@
     </div>
   </div>
 <% end %>
-<% if user_signed_in? %>
-  <% if current_user.try(:admin?) %>
-    <%= link_to 'Add Product', new_product_path, class: "" %>
-    <div class="clearfix"></div>
-  <% end %>
-<% end %>
 <input type="hidden" value="<%= !current_user.nil? ? 88 : 99 %>" id="cart_access" />
 <!--product-end-->
 
