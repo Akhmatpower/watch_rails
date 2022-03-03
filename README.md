@@ -1,24 +1,22 @@
 # README
+![Unit Tests & Lint](https://github.com/Devyatiyarov/Tasklist-online/workflows/Unit%20Tests%20&%20Lint/badge.svg)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# watch_rails
+## Require
+* Ruby 2.6.5
+### PostgreSQL installation
+* sudo apt install postgresql
+* sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
+### Set up
+* gem install bundler
+* bundle install
+* sudo apt install yarn
+* bundle exec rails webpacker:install
+* bundle exec rake db:create
+* rake db:migrate
+### Rspec
+* bundle exec rspec
+### Rubocop
+* bundle exec rubocop
+### Run
+* rails s
