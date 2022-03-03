@@ -64,6 +64,7 @@ GEM
     autoprefixer-rails (10.4.2.0)
       execjs (~> 2)
     bcrypt (3.1.16)
+    bcrypt (3.1.16-java)
     bindex (0.8.1)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
@@ -120,6 +121,9 @@ GEM
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (2.0.1)
     ffi (1.15.5)
+    ffi (1.15.5-java)
+    ffi (1.15.5-x64-mingw32)
+    ffi (1.15.5-x86-mingw32)
     globalid (1.0.0)
       activesupport (>= 5.0)
     hashie (5.0.0)
@@ -158,8 +162,15 @@ GEM
     multi_json (1.15.0)
     multi_xml (0.6.0)
     nio4r (2.5.8)
+    nio4r (2.5.8-java)
     nokogiri (1.13.3)
       mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    nokogiri (1.13.3-java)
+      racc (~> 1.4)
+    nokogiri (1.13.3-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.13.3-x86-mingw32)
       racc (~> 1.4)
     oauth2 (1.4.9)
       faraday (>= 0.17.3, < 3.0)
@@ -183,14 +194,22 @@ GEM
     parser (3.1.1.0)
       ast (~> 2.4.1)
     pg (1.3.3)
+    pg (1.3.3-x64-mingw32)
+    pg (1.3.3-x86-mingw32)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    pry (0.14.1-java)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+      spoon (~> 0.0)
     public_suffix (4.0.6)
     puma (3.12.6)
+    puma (3.12.6-java)
     pundit (2.2.0)
       activesupport (>= 3.0.0)
     racc (1.6.0)
+    racc (1.6.0-java)
     rack (2.2.3)
     rack-protection (2.2.0)
       rack
@@ -279,6 +298,8 @@ GEM
     rubyzip (2.3.2)
     sassc (2.4.0)
       ffi (~> 1.9)
+    sassc (2.4.0-x64-mingw32)
+      ffi (~> 1.9)
     sassc-rails (2.1.2)
       railties (>= 4.0.0)
       sassc (>= 2.0)
@@ -294,7 +315,9 @@ GEM
     simple_form (5.1.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
-    sprockets (4.0.2)
+    spoon (0.0.6)
+      ffi
+    sprockets (4.0.3)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (3.4.2)
@@ -303,12 +326,15 @@ GEM
       sprockets (>= 3.0.0)
     thor (1.2.1)
     thread_safe (0.3.6)
+    thread_safe (0.3.6-java)
     tilt (2.0.10)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2021.5)
+      tzinfo (>= 1.0.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (2.1.0)
@@ -325,12 +351,18 @@ GEM
       selenium-webdriver (~> 4.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
+    websocket-driver (0.7.5-java)
+      websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
 PLATFORMS
+  java
   ruby
+  x64-mingw32
+  x86-mingw32
+  x86-mswin32
 
 DEPENDENCIES
   active_model_serializers
@@ -378,7 +410,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 2.6.5p114
+   ruby 2.6.9p207
 
 BUNDLED WITH
-   2.3.7
+   1.17.2
